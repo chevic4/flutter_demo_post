@@ -21,7 +21,7 @@ class ListPostsScreen extends StatelessWidget {
         itemBuilder: (context, index) {
           return Text(
             posts[index].title.toString(),
-            style: TextStyle(color: Colors.black),
+            style: const TextStyle(color: Colors.black),
           );
         },
         separatorBuilder: (context, index) => const Divider(),

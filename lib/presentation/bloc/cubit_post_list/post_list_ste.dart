@@ -21,7 +21,7 @@ class PostLoading extends PostState {
 class PostLoaded extends PostState {
   final List<PostEntity> postList;
 
-  PostLoaded(this.postList);
+  const PostLoaded(this.postList);
 
   @override
   List<Object> get props => [postList];
@@ -30,7 +30,7 @@ class PostLoaded extends PostState {
 class PostError extends PostState {
   final String errorMessage;
 
-  PostError(this.errorMessage);
+  const PostError(this.errorMessage);
 
   @override
   List<Object> get props => [errorMessage];

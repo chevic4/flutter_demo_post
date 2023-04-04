@@ -10,7 +10,7 @@ class PostListCubit extends Cubit<PostState> {
     if (state is PostLoading) return;
 
     final failureOrPosts = await getPosts();
-    failureOrPosts.fold((error) => PostError('error!'), (listPosts) {
+    failureOrPosts.fold((error) => const PostError('error!'), (listPosts) {
       emit(PostLoaded(listPosts));
     });
   }

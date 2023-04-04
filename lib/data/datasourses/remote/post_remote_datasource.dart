@@ -1,7 +1,6 @@
 import 'dart:convert';
 import 'package:flutter_application_posts_api/core/error/exception.dart';
 import 'package:flutter_application_posts_api/data/models/post_model.dart';
-import 'package:flutter_application_posts_api/data/models/responce_model.dart';
 import 'package:http/http.dart' as http;
 
 const uri = 'https://www.reddit.com/r/flutterdev/new.json';

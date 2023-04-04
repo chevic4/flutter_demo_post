@@ -6,7 +6,7 @@ class PostEntity extends Equatable {
   final String ups;
   final String selftext;
 
-  PostEntity(
+  const PostEntity(
       {required this.thumbnail,
       required this.title,
       required this.ups,

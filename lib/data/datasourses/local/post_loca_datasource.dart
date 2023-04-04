@@ -20,16 +20,15 @@ class PostLocalDataSourseImpl implements PostLocalDataSourse {
     if (jsonData!.isNotEmpty) {
       return Future.value(
           jsonData.map((e) => PostModel.fromJson(json.decode(e))).toList());
-    } else
+    } else {
       throw CachException();
+    }
   }
 
   @override
-  Future<void> savePostToCache(List<PostModel> posts) {
+  Future<void> savePostToCache(List<PostModel> posts) async {
     final List<String> dataJson =
         posts.map((e) => json.encode(e.toJson())).toList();
-    sharedPreferences.setStringList(cacheName, dataJson);
-    print('write in cache ok');
-    return Future.value(dataJson);
+    await sharedPreferences.setStringList(cacheName, dataJson);
   }
 }

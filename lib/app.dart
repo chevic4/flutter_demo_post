@@ -32,8 +32,6 @@ class AppRoute extends StatelessWidget {
 final routes = {
   '/': (context) => const HomeScreen(),
   '/postInfoScreen': (context) => const PostInfoScreen(),
-  // '/editdata': (context, {arguments}) =>
-  //     EditDataScreen(indexWorkDay: arguments)
 };
 
 var onGenerateRoute = (RouteSettings settings) {

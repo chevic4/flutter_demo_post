@@ -1,7 +1,7 @@
 import 'package:flutter_application_posts_api/domain/entity/post.dart';
 
 class PostModel extends PostEntity {
-  PostModel({
+  const PostModel({
     required thumbnail,
     required title,
     required ups,
